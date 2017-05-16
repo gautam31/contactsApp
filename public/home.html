@@ -1,0 +1,14 @@
+<div>
+    <uib-tabset active="activeJustified" justified="true">
+        <uib-tab index="0" heading="Directory">
+            <ul class="list-group">
+                <a class="list-group-item" ng-repeat="contact in contacts" ng-click="gotoContactDetails(contact)">{{contact.name}}</a>
+            </ul>
+        </uib-tab>
+        <uib-tab index="1" heading="Messages">
+            <ul class="list-group">
+                <a class="list-group-item" ng-repeat="message in messages">{{message.message}}</a>
+            </ul>
+        </uib-tab>
+    </uib-tabset>
+</div>
