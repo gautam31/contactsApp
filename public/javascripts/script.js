@@ -96,7 +96,7 @@ app.controller("msgCtrl", function($scope, $rootScope, $routeParams, $http) {
         //msg= "Hi your otp is 7645";
         else {
             console.log("inside otp");
-            $http.get("sendOTPS?id="+id+"&msg="+msg)
+            $http.get("sendOTPS?id="+id+"&msg="+otpMessage)
             .then(function(response) {
                 console.log(response)
             });
