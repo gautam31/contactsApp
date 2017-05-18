@@ -2,7 +2,7 @@ var exports = module.exports = {};
 var twilio = require('twilio');
 var jsonfile = require('jsonfile')
 
-var arr = [{ 'name': 'vas', 'phone': '+919962251771', 'id': '1' }]
+var arr = [{ 'name': 'vas', 'phone': '+919911639858', 'id': '1' }]
 
 
 exports.getContactList = function(callback) {
