@@ -21,8 +21,8 @@ exports.sendOTP = function(id,msg, callback) {
         return value['id'] == id;
     })
     var user = result[0]
-    var accountSid = 'AC4b14051ba26993e3fc77cf6ec6949b44';
-    var authToken = '8d9e40c7e3466595b526b169de4329cc';
+    var accountSid = 'ACefafdbade6c476ffaaba58dec46d9897';
+    var authToken = '83977e62559922d0d4f47bf7953fbcf7';
 
     var otp = `${parseInt(Math.random()*10)}${parseInt(Math.random()*10)}${parseInt(Math.random()*10)}${parseInt(Math.random()*10)}`
 
