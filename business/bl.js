@@ -28,7 +28,7 @@ exports.sendOTP = function(id,msg, callback) {
 
     var client = new twilio(accountSid, authToken);
     client.messages.create({
-        body: `${msg}  OTP: ${otp}`,
+        body: `${msg}`,
         from: '+12542178477', // Text this number
         to: user['phone'] // From a valid Twilio number
     }, function(err, message) {
@@ -41,7 +41,7 @@ exports.sendOTP = function(id,msg, callback) {
                 if (!obj) {
                     obj = []
                 }
-                var objToWrite = { message: `Your OTP is ${otp}` }
+                var objToWrite = { message: `Name: ${user.name}, Message : ${msg}` }
                 obj.push(objToWrite)
 
                 jsonfile.writeFile(file, obj, function(err) {
